@@ -1,5 +1,7 @@
 # warclassifier
 
+_WARClassifier_ is web archive content classification using zero-shot learning.
+
 While the role of web archiving in preserving our digital heritage is undeniable, unlocking its full potential continues to call for ongoing enhancements. Given the huge number of records that we find in a web archive, we can expect that the ability to organize content into categories will enhance usability. We approached web archive content classification using advanced machine learning techniques, specifically, zero-shot learning. Our goal is to offer a tool for classification of web archive content, so that this information can eventually be useful in making web archives a more navigable digital landscape for information retrieval as well as research.
 
 We developed WARClassifier, a tool for classifying content in WARC files. The user supplies an arbitrary list of target categories. The tool makes use of a zero-shot classifier provided by Facebook’s BART model pretrained on the Multi-NLI dataset to attempt to associate HTML documents in the set of WARC files with the user-supplied candidate labels. The output is produced in the form of CSV data.
